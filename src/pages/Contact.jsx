@@ -58,14 +58,14 @@ function Contact() {
                   <Phone size={24} />
                   <div>
                     <h4>Phone</h4>
-                    <a href="tel:+1234567890">+1 234 567 890</a>
+                    <a href="tel:+46728763212">+46 72 876 32 12</a>
                   </div>
                 </div>
                 <div className="contact-item">
                   <Mail size={24} />
                   <div>
                     <h4>Email</h4>
-                    <a href="mailto:contact@evin.com">contact@evin.com</a>
+                    <a href="mailto:info@evin-hussein.com">info@evin-hussein.com</a>
                   </div>
                 </div>
               </div>

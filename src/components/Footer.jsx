@@ -25,7 +25,7 @@ function Footer() {
               <a href="#" className="social-link" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@evin.com" className="social-link" aria-label="Email">
+              <a href="mailto:info@evin-hussein.com" className="social-link" aria-label="Email">
                 <Mail size={20} />
               </a>
             </div>
@@ -44,9 +44,9 @@ function Footer() {
               <Phone size={16} />
               +46 72 876 32 12
             </a>
-            <a href="mailto:contact@evin.com">
+            <a href="mailto:info@evin-hussein.com">
               <Mail size={16} />
-              contact@evin.com
+              info@evin-hussein.com
             </a>
           </div>
 
