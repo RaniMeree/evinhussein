@@ -1,31 +1,38 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
 import './Contact.css';
+
+const FORMSPREE_URL = 'https://formspree.io/f/xnjbwnpy';
 
 function Contact() {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) return;
+    const form = e.target;
     
-    const messages = JSON.parse(localStorage.getItem('evin_messages') || '[]');
-    messages.push({ ...formData, id: Date.now(), date: new Date().toISOString() });
-    localStorage.setItem('evin_messages', JSON.stringify(messages));
-    
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitted(false);
-    }, 3000);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    try {
+      const response = await fetch(FORMSPREE_URL, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        form.reset();
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 5000);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
   };
 
   return (
@@ -91,7 +98,8 @@ function Contact() {
                 ) : (
                   <motion.form
                     className="contact-form"
-                    onSubmit={handleSubmit}
+                    action={FORMSPREE_URL}
+                    method="POST"
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                   >
@@ -100,8 +108,6 @@ function Contact() {
                       <input
                         type="text"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -110,8 +116,6 @@ function Contact() {
                       <input
                         type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -119,8 +123,6 @@ function Contact() {
                       <label>{t('contact.message')}</label>
                       <textarea
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
                         rows={5}
                         required
                       />
