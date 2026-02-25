@@ -1,0 +1,84 @@
+{
+  "header": {
+    "home": "Hem",
+    "about": "Om",
+    "booking": "Boka",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "about": "Om Oss",
+    "contact": "Kontakta Oss",
+    "terms": "Villkor",
+    "privacy": "Integritetspolicy",
+    "rights": "Alla rättigheter reserverade"
+  },
+  "home": {
+    "heroTitle": "Evin Hussein",
+    "heroSubtitle": "Livskvalitetsutveckling & Holistisk Balanscoach",
+    "cta": "Boka Nu",
+    "about": {
+      "title": "Om Evin",
+      "description": "Evin Hussein är en specialiserad coach inom livskvalitetsförbättring och psykologisk och fysisk balans, som hjälper individer att uppnå positiv förändring i sina liv genom en holistisk metodik som kombinerar vetenskaplig kunskap, självmedvetenhet och moderna utvecklingstekniker.",
+      "mission": "Att stärka människor att förstå sig själva djupt, och återställa balansen i sina liv på ett medvetet och hållbart sätt, för att nå ett liv med mer fred, klarhet och tillfredsställelse."
+    },
+    "qualifications": {
+      "title": "Kvalifikationer & Studier",
+      "items": [
+        "Integrativ Medicin (under Dr. Naders handledning)",
+        "Rapid Transformational Therapy (RTT) - Marisa Peer",
+        "Makrobiotik (balanserad näringsvetenskap & naturlig livsstil)"
+      ]
+    },
+    "services": {
+      "title": "Arbetsområden",
+      "items": [
+        "Individuella coaching-sessioner för personlig utveckling",
+        "Psykologisk balans och stresshantering",
+        "Vägledning mot en holistisk hälsosam livsstil",
+        "Näringsmässig och beteendemässig medvetenhet baserad på Makrobiotik-principer",
+        "Självutvecklingsprogram och intern motivation"
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Skapa djupare samhällsmedvetenhet om vikten av intern balans, så att omsorgen om mental och fysisk hälsa blir en livsstil och inte bara en tillfällig lösning."
+    }
+  },
+  "about": {
+    "title": "Om Oss",
+    "hero": "Evin Hussein — Livskvalitetsutveckling & Holistisk Balanscoach"
+  },
+  "booking": {
+    "title": "Boka en Session",
+    "selectDate": "Välj Datum",
+    "selectTime": "Välj Tid",
+    "name": "Ditt Namn",
+    "email": "E-postadress",
+    "phone": "Telefonnummer",
+    "notes": "Ytterligare Anteckningar (valfritt)",
+    "submit": "Bekräfta Bokning",
+    "success": "Bokning bekräftad! Vi kontaktar dig snart.",
+    "unavailable": "Detta datum är inte tillgängligt. Vänligen välj ett annat.",
+    "times": {
+      "morning": "Morgon",
+      "afternoon": "Eftermiddag",
+      "evening": "Kväll"
+    }
+  },
+  "contact": {
+    "title": "Kontakta Oss",
+    "name": "Namn",
+    "email": "E-post",
+    "message": "Meddelande",
+    "send": "Skicka Meddelande",
+    "success": "Meddelande skickat framgångsrikt!"
+  },
+  "terms": {
+    "title": "Villkor",
+    "content": "Välkommen till vår webbplats. Genom att komma åt och använda denna webbplats godkänner du att vara bunden av dessa villkor. Allt innehåll på denna webbplats skyddas av upphovsrättslagar. De tjänster som erbjuds är endast för personlig utveckling och välbefinnande. Att boka tid utgör ett avtal att delta på sessioner. Vi förbehåller oss rätten att avboka eller omboka sessioner med föregående meddelande."
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "content": "Vi värderar din integritet. Denna webbplats samlar in personlig information (namn, e-post, telefon) uteslutande för bokningsändamål och kommunikation med dig. Dina uppgifter lagras säkert och kommer aldrig att delas med tredje parter. Du har rätt att begära radering av dina personuppgifter när som helst. Genom att använda denna webbplats samtycker du till v integritetspraxis."
+  }
+}

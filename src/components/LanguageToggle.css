@@ -1,0 +1,98 @@
+.language-toggle {
+  position: relative;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  color: #374151;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.language-button:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: #667eea;
+}
+
+.current-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  min-width: 150px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 100;
+  animation: dropdownFade 0.2s ease;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[dir="rtl"] .language-dropdown {
+  right: auto;
+  left: 0;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #374151;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+[dir="rtl"] .language-option {
+  text-align: right;
+}
+
+.language-option:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.language-option.active {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  font-weight: 600;
+}
+
+.flag {
+  font-size: 1.1rem;
+}
