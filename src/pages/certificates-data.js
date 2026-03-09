@@ -22,4 +22,6 @@ const certificatesData = [
   },
 ];
 
+// NOTE: Add entries above only when a new PDF is placed in public/certificates/
+
 export default certificatesData;
