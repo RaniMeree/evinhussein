@@ -15,6 +15,7 @@ function Header() {
     { path: '/', label: t('header.home') },
     { path: '/about', label: t('header.about') },
     { path: '/booking', label: t('header.booking') },
+    { path: '/certificates', label: t('header.certificates') },
     { path: '/contact', label: t('header.contact') },
   ];
 

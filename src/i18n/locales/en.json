@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "booking": "Booking",
-    "contact": "Contact"
+    "contact": "Contact",
+    "certificates": "Certificates"
   },
   "footer": {
     "about": "About Us",
@@ -80,5 +81,25 @@
   "privacy": {
     "title": "Privacy Policy",
     "content": "We value your privacy. This website collects personal information (name, email, phone) solely for booking purposes and communication with you. Your data is stored securely and will never be shared with third parties. You have the right to request deletion of your personal data at any time. By using this website, you consent to our privacy practices."
+  },
+  "certificates": {
+    "title": "Certificates",
+    "subtitle": "Official certifications and qualifications earned by Evin Hussein",
+    "view": "View",
+    "download": "Download",
+    "items": [
+      {
+        "title": "Rapid Transformational Therapy (RTT)",
+        "issuer": "Marisa Peer — RTT School"
+      },
+      {
+        "title": "Integrative Medicine",
+        "issuer": "Under the supervision of Dr. Nader"
+      },
+      {
+        "title": "Macrobiotics",
+        "issuer": "Balanced Nutrition Science & Natural Lifestyle"
+      }
+    ]
   }
 }

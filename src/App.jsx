@@ -10,6 +10,7 @@ import Booking from './pages/Booking';
 import Contact from './pages/Contact';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import Certificates from './pages/Certificates';
 
 import './App.css';
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
           </Routes>

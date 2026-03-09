@@ -3,7 +3,8 @@
     "home": "Hem",
     "about": "Om",
     "booking": "Boka",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "certificates": "Certifikat"
   },
   "footer": {
     "about": "Om Oss",
@@ -80,5 +81,25 @@
   "privacy": {
     "title": "Integritetspolicy",
     "content": "Vi värderar din integritet. Denna webbplats samlar in personlig information (namn, e-post, telefon) uteslutande för bokningsändamål och kommunikation med dig. Dina uppgifter lagras säkert och kommer aldrig att delas med tredje parter. Du har rätt att begära radering av dina personuppgifter när som helst. Genom att använda denna webbplats samtycker du till v integritetspraxis."
+  },
+  "certificates": {
+    "title": "Certifikat",
+    "subtitle": "Officiella certifikat och kvalifikationer för Evin Hussein",
+    "view": "Visa",
+    "download": "Ladda ner",
+    "items": [
+      {
+        "title": "Rapid Transformational Therapy (RTT)",
+        "issuer": "Marisa Peer — RTT School"
+      },
+      {
+        "title": "Integrativ Medicin",
+        "issuer": "Under handledning av Dr. Nader"
+      },
+      {
+        "title": "Makrobiotik",
+        "issuer": "Balanserad näringsvetenskap & naturlig livsstil"
+      }
+    ]
   }
 }

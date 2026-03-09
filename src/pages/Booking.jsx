@@ -69,9 +69,9 @@ function Booking() {
           >
             <h3>Session Types</h3>
             <ul>
-              <li><strong>Initial Consultation</strong> - 30 minutes free introduction call</li>
-              <li><strong>Life Coaching</strong> - 60 minutes personal development session</li>
-              <li><strong>Macrobiotics Consultation</strong> - 45 minutes nutritional guidance</li>
+              <li><strong>Free Consultation</strong> - 20 minutes</li>
+              <li><strong>45 min Session</strong> - 45 minutes</li>
+              <li><strong>1 Hour Session</strong> - 60 minutes</li>
             </ul>
           </motion.div>
         </div>
