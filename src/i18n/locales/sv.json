@@ -51,6 +51,18 @@
   },
   "booking": {
     "title": "Boka en Session",
+    "cardTitle": "Boka en session med Evin",
+    "cardSubtitle": "Välj en tid som passar dig bäst",
+    "openCalendar": "Öppna bokningskalender",
+    "featureTime": "Välj din föredragna tid",
+    "featureConfirm": "Omedelbar bekräftelse",
+    "featureSync": "Kalendersynkronisering automatiskt",
+    "sessionTypes": "Sessionstyper",
+    "sessions": [
+      { "name": "Gratis konsultation", "duration": "20 minuter" },
+      { "name": "45 min session", "duration": "45 minuter" },
+      { "name": "1 timmes session", "duration": "60 minuter" }
+    ],
     "selectDate": "Välj Datum",
     "selectTime": "Välj Tid",
     "name": "Ditt Namn",

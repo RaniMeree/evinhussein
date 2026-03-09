@@ -30,8 +30,8 @@ function Booking() {
             transition={{ duration: 0.6 }}
           >
             <div className="booking-header">
-              <h2>Book a Session with Evin</h2>
-              <p>Choose a time that works best for you</p>
+              <h2>{t('booking.cardTitle')}</h2>
+              <p>{t('booking.cardSubtitle')}</p>
             </div>
 
             <a 
@@ -41,22 +41,22 @@ function Booking() {
               className="booking-button"
             >
               <CalendarDays size={24} />
-              Open Booking Calendar
+              {t('booking.openCalendar')}
               <ExternalLink size={18} />
             </a>
 
             <div className="booking-features">
               <div className="feature">
                 <Clock size={20} />
-                <span>Choose your preferred time</span>
+                <span>{t('booking.featureTime')}</span>
               </div>
               <div className="feature">
                 <CheckCircle size={20} />
-                <span>Instant confirmation</span>
+                <span>{t('booking.featureConfirm')}</span>
               </div>
               <div className="feature">
                 <Mail size={20} />
-                <span>Calendar sync automatically</span>
+                <span>{t('booking.featureSync')}</span>
               </div>
             </div>
           </motion.div>
@@ -67,11 +67,11 @@ function Booking() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3>Session Types</h3>
+            <h3>{t('booking.sessionTypes')}</h3>
             <ul>
-              <li><strong>Free Consultation</strong> - 20 minutes</li>
-              <li><strong>45 min Session</strong> - 45 minutes</li>
-              <li><strong>1 Hour Session</strong> - 60 minutes</li>
+              {t('booking.sessions', { returnObjects: true }).map((s, i) => (
+                <li key={i}><strong>{s.name}</strong> - {s.duration}</li>
+              ))}
             </ul>
           </motion.div>
         </div>

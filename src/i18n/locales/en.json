@@ -51,6 +51,18 @@
   },
   "booking": {
     "title": "Book a Session",
+    "cardTitle": "Book a Session with Evin",
+    "cardSubtitle": "Choose a time that works best for you",
+    "openCalendar": "Open Booking Calendar",
+    "featureTime": "Choose your preferred time",
+    "featureConfirm": "Instant confirmation",
+    "featureSync": "Calendar sync automatically",
+    "sessionTypes": "Session Types",
+    "sessions": [
+      { "name": "Free Consultation", "duration": "20 minutes" },
+      { "name": "45 min Session", "duration": "45 minutes" },
+      { "name": "1 Hour Session", "duration": "60 minutes" }
+    ],
     "selectDate": "Select a Date",
     "selectTime": "Select a Time",
     "name": "Your Name",

@@ -51,6 +51,18 @@
   },
   "booking": {
     "title": "احجز جلسة",
+    "cardTitle": "احجز جلسة مع إيفين",
+    "cardSubtitle": "اختر الوقت الأنسب لك",
+    "openCalendar": "افتح تقويم الحجز",
+    "featureTime": "اختر وقتك المفضل",
+    "featureConfirm": "تأكيد فوري",
+    "featureSync": "مزامنة التقويم تلقائياً",
+    "sessionTypes": "أنواع الجلسات",
+    "sessions": [
+      { "name": "استشارة مجانية", "duration": "٢٠ دقيقة" },
+      { "name": "جلسة ٤٥ دقيقة", "duration": "٤٥ دقيقة" },
+      { "name": "جلسة ساعة كاملة", "duration": "٦٠ دقيقة" }
+    ],
     "selectDate": "اختر التاريخ",
     "selectTime": "اختر الوقت",
     "name": "اسمك",
