@@ -9,22 +9,16 @@
  */
 const certificatesData = [
   {
-    filename: 'rtt.pdf',
+    filename: 'certification-RTT-Practitioner-Certificate-and-Logos-EvinHussein.pdf',
     en: { title: 'Rapid Transformational Therapy (RTT)', issuer: 'Marisa Peer — RTT School' },
     ar: { title: 'العلاج التحويلي السريع (RTT)', issuer: 'ماريسا بير — مدرسة RTT' },
     sv: { title: 'Rapid Transformational Therapy (RTT)', issuer: 'Marisa Peer — RTT School' },
   },
   {
-    filename: 'integrative-medicine.pdf',
-    en: { title: 'Integrative Medicine', issuer: 'Under the supervision of Dr. Nader' },
-    ar: { title: 'الطب التكاملي الشامل', issuer: 'بإشراف الدكتور نادر' },
-    sv: { title: 'Integrativ Medicin', issuer: 'Under handledning av Dr. Nader' },
-  },
-  {
-    filename: 'macrobiotics.pdf',
-    en: { title: 'Macrobiotics', issuer: 'Balanced Nutrition Science & Natural Lifestyle' },
-    ar: { title: 'علم الماكروبيوتيك', issuer: 'علم التغذية المتوازنة ونمط الحياة الطبيعي' },
-    sv: { title: 'Makrobiotik', issuer: 'Balanserad näringsvetenskap & naturlig livsstil' },
+    filename: 'Evin Hussein...pdf',
+    en: { title: 'Evin Hussein — Certificate', issuer: '' },
+    ar: { title: 'إيفين حسين — شهادة', issuer: '' },
+    sv: { title: 'Evin Hussein — Certifikat', issuer: '' },
   },
 ];
 
