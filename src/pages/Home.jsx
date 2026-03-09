@@ -38,6 +38,9 @@ function Home() {
           animate="visible"
           variants={containerVariants}
         >
+          <motion.div variants={itemVariants} className="hero-avatar-wrap">
+            <img src="/images/evin.jpeg" alt="Evin Hussein" className="hero-avatar" />
+          </motion.div>
           <motion.h1 variants={itemVariants} className="hero-title">
             {t('home.heroTitle')}
           </motion.h1>

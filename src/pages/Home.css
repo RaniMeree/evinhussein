@@ -30,6 +30,22 @@
   max-width: 800px;
 }
 
+.hero-avatar-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 4px solid white;
+  box-shadow: 0 4px 24px rgba(102, 126, 234, 0.3);
+}
+
 .hero-title {
   font-size: 4rem;
   font-weight: 800;
