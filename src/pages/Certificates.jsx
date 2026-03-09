@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Award, ExternalLink, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import certificatesData from './certificates-data';
 import './Certificates.css';
 
@@ -54,33 +54,22 @@ function Certificates() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -6, boxShadow: '0 12px 40px rgba(102,126,234,0.18)' }}
+                whileHover={{ y: -6, boxShadow: '0 16px 48px rgba(102,126,234,0.2)' }}
+                onClick={() => handleOpen(cert)}
               >
-                <div className="cert-icon-wrap">
-                  <Award size={40} className="cert-icon" />
+                <div className="cert-thumbnail-wrap">
+                  <img
+                    src={`/certificates/${cert.filename}`}
+                    alt={cert.title}
+                    className="cert-thumbnail"
+                  />
+                  <div className="cert-thumbnail-overlay">
+                    <span>{t('certificates.view')}</span>
+                  </div>
                 </div>
                 <div className="cert-info">
                   <h3>{cert.title}</h3>
-                  <p className="cert-issuer">{cert.issuer}</p>
-                </div>
-                <div className="cert-actions">
-                  <motion.button
-                    className="cert-btn cert-btn-view"
-                    onClick={() => handleOpen(cert)}
-                    whileTap={{ scale: 0.97 }}
-                  >
-                    {t('certificates.view')}
-                  </motion.button>
-                  <a
-                    href={`/certificates/${cert.filename}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cert-btn cert-btn-download"
-                    download
-                  >
-                    <ExternalLink size={16} />
-                    {t('certificates.download')}
-                  </a>
+                  {cert.issuer && <p className="cert-issuer">{cert.issuer}</p>}
                 </div>
               </motion.div>
             ))}
@@ -99,41 +88,43 @@ function Certificates() {
           >
             <motion.div
               className="cert-modal"
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              exit={{ scale: 0.92, opacity: 0 }}
               transition={{ duration: 0.25 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="cert-modal-header">
-                <div>
-                  <h3>{selected.title}</h3>
-                  <p>{selected.issuer}</p>
-                </div>
-                <button className="cert-modal-close" onClick={handleClose} aria-label="Close">
-                  <X size={22} />
-                </button>
-              </div>
+              <button className="cert-modal-close" onClick={handleClose} aria-label="Close">
+                <X size={22} />
+              </button>
+
               <div className="cert-modal-body">
-                <iframe
+                <img
                   src={`/certificates/${selected.filename}`}
-                  title={selected.title}
-                  className="cert-iframe"
+                  alt={selected.title}
+                  className="cert-modal-img"
                 />
               </div>
-              {certList.length > 1 && (
-                <div className="cert-modal-nav">
-                  <button className="cert-nav-btn" onClick={handlePrev} aria-label="Previous">
-                    <ChevronLeft size={20} />
-                  </button>
-                  <span className="cert-nav-label">
-                    {certList.findIndex((c) => c.filename === selected.filename) + 1} / {certList.length}
-                  </span>
-                  <button className="cert-nav-btn" onClick={handleNext} aria-label="Next">
-                    <ChevronRight size={20} />
-                  </button>
+
+              <div className="cert-modal-footer">
+                <div className="cert-modal-info">
+                  <h3>{selected.title}</h3>
+                  {selected.issuer && <p>{selected.issuer}</p>}
                 </div>
-              )}
+                {certList.length > 1 && (
+                  <div className="cert-modal-nav">
+                    <button className="cert-nav-btn" onClick={handlePrev} aria-label="Previous">
+                      <ChevronLeft size={20} />
+                    </button>
+                    <span className="cert-nav-label">
+                      {certList.findIndex((c) => c.filename === selected.filename) + 1} / {certList.length}
+                    </span>
+                    <button className="cert-nav-btn" onClick={handleNext} aria-label="Next">
+                      <ChevronRight size={20} />
+                    </button>
+                  </div>
+                )}
+              </div>
             </motion.div>
           </motion.div>
         )}

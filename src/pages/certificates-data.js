@@ -9,19 +9,19 @@
  */
 const certificatesData = [
   {
-    filename: 'certification-RTT-Practitioner-Certificate-and-Logos-EvinHussein.pdf',
+    filename: 'rapid.jpg',
     en: { title: 'Rapid Transformational Therapy (RTT)', issuer: 'Marisa Peer — RTT School' },
     ar: { title: 'العلاج التحويلي السريع (RTT)', issuer: 'ماريسا بير — مدرسة RTT' },
     sv: { title: 'Rapid Transformational Therapy (RTT)', issuer: 'Marisa Peer — RTT School' },
   },
   {
-    filename: 'Evin Hussein...pdf',
-    en: { title: 'Evin Hussein — Certificate', issuer: '' },
-    ar: { title: 'إيفين حسين — شهادة', issuer: '' },
-    sv: { title: 'Evin Hussein — Certifikat', issuer: '' },
+    filename: 'Unified.jpg',
+    en: { title: 'Unified Integrative Medicine', issuer: 'Dr. Nader Butto — Unified Integrative Medicine College' },
+    ar: { title: 'الطب التكاملي الموحد', issuer: 'د. نادر بوتو — كلية الطب التكاملي الموحد' },
+    sv: { title: 'Unified Integrative Medicine', issuer: 'Dr. Nader Butto — Unified Integrative Medicine College' },
   },
 ];
 
-// NOTE: Add entries above only when a new PDF is placed in public/certificates/
+// NOTE: Add entries above when a new image is placed in public/certificates/
 
 export default certificatesData;
