@@ -93,6 +93,12 @@ function Footer() {
           variants={itemVariants}
         >
           <p>&copy; {currentYear} Evin Hussein. {t('footer.rights')}</p>
+          <p className="footer-credit">
+            Made by{' '}
+            <a href="https://www.intellinovasolutions.com" target="_blank" rel="noopener noreferrer">
+              Intellinova
+            </a>
+          </p>
         </motion.div>
       </div>
     </motion.footer>
